@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "opsec"
+version = "1.0.0"
+description = "OPSEC library for the everyday man"
+readme = "README.md"
+requires-python = ">=3.5"
+license = {text = "AGPL-3.0"}
+
+authors = [
+    { name = "Pinyin", email = "" }, # Optional
+]
+
+maintainers = [
+    { name = "Pinyin", email = "" }, # Optional
+]
+
+keywords = ["opsec", "larping"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/star-pinyin/opsec"
+Repository = "https://github.com/star-pinyin/opsec"
+"Bug Tracker" = "https://github.com/star-pinyin/opsec/issues"
+
+[project.optional-dependencies]
+dev = [
+    "black>=22.0.0",
+    "flake8>=4.0.0",
+    "mypy>=0.950",
+]
+
+[tool.setuptools]
+packages = ["opsec"]
+
+[tool.setuptools.package-data]
+opsec = ["py.typed"]
+
+[tool.black]
+line-length = 100
+target-version = ["py37", "py38", "py39", "py310", "py311"]
+
+[tool.mypy]
+python_version = "3.5"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
