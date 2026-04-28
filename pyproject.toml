@@ -11,11 +11,11 @@ requires-python = ">=3.5"
 license = {text = "AGPL-3.0"}
 
 authors = [
-    { name = "Pinyin", email = "" }, # Optional
+    { name = "Pinyin", email = "pinyin@airmail.cc" }, # Optional
 ]
 
 maintainers = [
-    { name = "Pinyin", email = "" }, # Optional
+    { name = "Pinyin", email = "pinyin@airmail.cc" }, # Optional
 ]
 
 keywords = ["opsec", "larping"]
